@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <wchar.h>
+#include <Windows.h>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <conio.h>
+
+#pragma warning(disable : 4996)
+
+using namespace std;
+void repchar(string ch, int colv);
+
+
+int main()
+{
+    string str;
+    int nin;
+    cout << "Enter a character: ";
+    cin >> str;
+    cout << "Enter a number of repetitions: ";
+    cin >> nin;
+    repchar(str, nin);
+
+    return 0;
+}
+void repchar(string ch, int colv) {
+    for (int i = 0; i < colv; i++) {
+        cout << ch;
+    }
+    cout << endl;
+}
